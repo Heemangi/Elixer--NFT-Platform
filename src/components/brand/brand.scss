@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.box-slider__main {
+
+    padding: 200px 0 0;
+    
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 768px) {
+        .col-md-12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        .col-xl-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }        
+    }
+
+    .content-box {
+        h1 {
+            line-height: 1.2;
+        }
+    }
+
+
+
+}
